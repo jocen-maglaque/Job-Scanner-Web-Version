@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Scanner Ireland</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <button class="tab-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    <button class="tab-btn" onclick="openTab('home')">Home</button>
+    <button class="tab-btn" onclick="openTab('tracker')">Application Tracker</button>
+  </div>
+
+  <!-- HOME TAB -->
+  <div id="home" class="tab-content active">
+    <h1>Job Scanner Ireland</h1>
+
+    <div class="section">
+      <h2>Job Boards</h2>
+	<button onclick="openIndeed()">Open Indeed</button>
+	<button onclick="openLinkedIn()">Open LinkedIn</button>
+	<button onclick="openIrishJobs()">Open IrishJobs</button>
+    </div>
+
+    <div class="section">
+      <h2>Search Jobs by City</h2>
+      <select id="citySelect">
+        <option value="Ireland">Ireland (All)</option>
+        <option value="Cork">Cork</option>
+        <option value="Dublin">Dublin</option>
+        <option value="Limerick">Limerick</option>
+        <option value="Galway">Galway</option>
+        <option value="Waterford">Waterford</option>
+      </select>
+      <button onclick="searchCity()">Search</button>
+
+      <table id="jobTable">
+        <thead>
+          <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Remote</th>
+            <th>Type</th>
+            <th>Posted</th>
+            <th>Source</th>
+            <th>Application Link</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TRACKER TAB -->
+  <div id="tracker" class="tab-content">
+    <h1>Application Tracker</h1>
+    <div class="section">
+      <input id="trackerCompany" type="text" placeholder="Company">
+      <input id="trackerRole" type="text" placeholder="Role">
+      <input id="trackerStatus" type="text" placeholder="Status (Applied, Interview, etc)">
+      <button onclick="addApplication()">Add</button>
+    </div>
+    <table id="trackerTable">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

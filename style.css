@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background: #0d1117;
+  color: #e6e6e6;
+}
+
+.navbar {
+  background: #161b22;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.tab-btn {
+  background: #30363d;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  background: #484f58;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+button {
+  background: #fff;
+  color: #1e90ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e6f2ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+/* LANDING PAGE */
+.landing-container {
+  max-width: 700px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.button-group button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0078ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background: #005fcc;
+}
